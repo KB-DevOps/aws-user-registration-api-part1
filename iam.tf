@@ -7,8 +7,7 @@ resource "aws_iam_role" "serverlessapi_role" {
     Statement = [
       {
         Action = "sts:AssumeRole"
-        Effect = "Allow"
-        Sid    = ""        
+        Effect = "Allow"      
         Principal = {
           Service = "lambda.amazonaws.com"
         }
